@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UM3U IPTV</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/fontAwsome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<style>
+    /* WhatsApp floating icon */
+    .whatsapp-icon {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 80px; /* Augmenter la taille de l'icône */
+        height: 80px; /* Augmenter la taille de l'icône */
+        background-color: #25D366;
+        color: #FFF;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 80px; /* Ajuster la taille de l'icône */
+        font-size: 24px;
+        z-index: 999;
+        transition: transform 0.3s ease-in-out;
+        opacity: 0.7; /* Adjust the opacity value as per your preference */
+    }
+
+    .whatsapp-icon:hover {
+        transform: scale(1.1);
+    }
+</style>
+
+
+
+</head>
+<body>
+
+    <!-- WhatsApp floating icon -->
+    <a href="https://api.whatsapp.com/message/LZXDJ6XAUNDGE1?autoload=1&app_absent=0" class="whatsapp-icon" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <!-- preloader start -->
+    <div class="preloader">
+        <span></span>
+    </div>
+    <!-- preloader End -->
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <!-- Brand -->
+        <div class="container">
+            <a class="navbar-brand" href="index.html">UM3U IPTV</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+             <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-scroll-nav="0" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll-nav="1" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll-nav="2" href="#">Screenshots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll-nav="3" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-scroll-nav="5" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Home section start-->
+    <section class="home d-flex align-items-center" id="home" data-scroll-index="0">
+        <div class="effect-wrap">
+            <i class="fas fa-plus effect effect-1"></i>
+            <i class="fas fa-plus effect effect-2"></i>
+            <i class="fas fa-circle-notch effect effect-3"></i>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="home-text">
+                        <h1> UM3U IPTV</h1>
+                        <p>Welcome to our UM3U IPTV solution  Channel Selling App, the ultimate solution for entrepreneurs looking to enter the lucrative IPTV market. With our app, 
+                            you can effortlessly sell IPTV channels under your own logo and brand name, giving you full control and the opportunity to build a successful business</p>
+                        <div class="home-btn">
+                            <a data-scroll-nav="5" href="#" class="btn btn-1" data-scroll-goto="3">Get Started Now!</a>
+                            <button type="button" class="btn btn-1 video-play-button" onclick="video_play()"><i class="fas fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 text-center">
+                    <div class="home-img">
+                        <div class="circle"></div>
+                        <img src="img/app-screenshots/1212.png" alt="Landing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Home section End-->
+
+    <!-- Features section Start -->
+    <section class="features section-padding" id="features" data-scroll-index="1">
+        <idv class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>Key <span>Features</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel features-carousel">
+                    <div class="features-item">
+                        <div class="icon"><i class="fas fa-tv"></i></div>
+                        <h3>White-Label Solution</h3>
+                        <p>Customize the app with your logo, brand colors, and name, establishing a strong and professional presence in the market</p>
+                    </div>
+                    <div class="features-item">
+                        <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3>Flexible Channel Packages</h3>
+                        <p>Curate and offer a diverse selection of IPTV channels, tailored to your target audience's preferences and interests</p>
+                    </div>
+                    <div class="features-item">
+                        <div class="icon"><i class="fas fa-film"></i></div>
+                        <h3>Easy Management</h3>
+                        <p>Effortlessly manage subscriptions, user accounts, and billing, ensuring a seamless experience for your customers</p>
+                    </div>
+                    <div class="features-item">
+                        <div class="icon"><i class="fas fa-tv"></i></div>
+                        <h3>Multi-Platform Compatibility</h3>
+                        <p>Your app works on Android, iOS, and TV devices, giving your customers the freedom to access IPTV channels anytime, anywhere</p>
+                    </div>
+                    <div class="features-item">
+                        <div class="icon"><i class="fas fa-tv"></i></div>
+                        <h3>Easy to use</h3>
+                        <p>um3u created by Azul TV it easy to use it by your customer with full support</p>
+                    </div>
+                </div>
+            </div>
+        </idv>
+    </section>
+    
+    <!-- Features section End -->
+
+    <!-- fun factes section start -->
+    <section class="fun-facts section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-5">
+                    <style>
+                        .fun-facts-img img {
+                            width: 100%;
+                            max-width: 500px; /* Ajustez cette valeur selon vos besoins */
+                            height: auto;
+                            margin-bottom: 20px; /* Ajoute une marge en bas des images */
+                        }
+                    </style>
+                
+                    <div class="fun-facts-img text-center">
+                        <img src="img/app-screenshots/100.png" alt="Fun Facts">
+                    </div>
+                
+                    <div class="fun-facts-img text-center">
+                        <img src="img/app-screenshots/200.png" alt="Another Image">
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 col-md-7">
+                    <div class="section-title">
+                        <h2>Benefits <span>for Sellers</span> </h2>
+                    </div>
+                    <div class="fun-facts-text">
+                        <p>
+                            <strong>&bull;</strong>  <strong><strong><span style="font-weight: bold;">Establish Your Brand :</span></strong></strong> Promote your own logo and name, enhancing brand recognition and customer trust.
+                            <br><br>
+                            <strong>&bull;</strong>  <strong><strong><span style="font-weight: bold;">Generate Revenue :</span></strong></strong> Tap into the growing IPTV market and earn recurring revenue through channel subscriptions.
+                            <br><br>
+                            <strong>&bull;</strong>  <strong><strong><span style="font-weight: bold;">Expand Your Reach :</span></strong></strong> Reach a global audience and scale your business by selling IPTV channels online.
+                            <br><br>
+                            <strong>&bull;</strong>  <strong><strong><span style="font-weight: bold;">Expand Your Reach :</span></strong></strong> Reach a global audience and scale your business by selling IPTV channels online.
+                            <br><br>
+                            <strong>&bull;</strong>  <strong><strong><span style="font-weight: bold;">Complete Control :</span></strong></strong> Set your own pricing, channel packages, and promotional campaigns to maximize profitability.
+                        </p>
+                        
+                        
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="fun-fact-item style-1">
+                                    <h3>4000</h3>
+                                    <span>Downloads</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="fun-fact-item style-2">
+                                    <h3>200</h3>
+                                    <span>Likes</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fun factes section End -->
+
+
+    <!-- App screenshots section start -->
+    <style>
+        .section-title h2 {
+            position: relative;
+            animation: fade-in 2s ease-in-out;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .screenshots-carousel .screenshot-item {
+            perspective: 1000px;
+        }
+
+        .screenshots-carousel .screenshot-item img {
+            max-width: 1000px;
+            height: auto;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: transform 0.5s ease;
+        }
+
+        .screenshots-carousel .screenshot-item img.zoomed {
+            transform: scale(1.1);
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var screenshotItems = document.querySelectorAll(".screenshot-item");
+
+            screenshotItems.forEach(function(item) {
+                item.addEventListener("mouseenter", function() {
+                    this.querySelector("img").classList.add("zoomed");
+                });
+
+                item.addEventListener("mouseleave", function() {
+                    this.querySelector("img").classList.remove("zoomed");
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <section class="app-screenshots section-padding" data-scroll-index="2" id="screenshots">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>Screenshots <span style="color: purple;">MOBILE</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel screenshots-carousel">
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/4.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/5.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/6.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/7.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/8.png" alt="screenshots">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>Screenshots <span style="color: yellow; font-weight: bold;">TV</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel screenshots-carousel">
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/tv/1.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/tv/2.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/tv/3.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/tv/4.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/tv/5.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/tv/6.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/tv/7.png" alt="screenshots">
+                    </div>
+                    <div class="screenshot-item">
+                        <img src="img/app-screenshots/tv/8.png" alt="screenshots">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".screenshots-carousel").owlCarousel({
+                loop: true,
+                nav: true,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    768: {
+                        items: 3
+                    },
+                    992: {
+                        items: 4
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- App screenshots section End -->
+
+
+
+    
+    <!-- video pupup start -->
+    <div class="video-popup" onclick="video_play()">
+        <div class="video-popup-inner">
+            <i class="fas fa-times video-popup-close"></i>
+            <div class="iframe-box">
+                <iframe id="player-1" src="img/app-screenshots/tv/vd.mp4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    
+    <!-- video pupup End -->
+
+    <!-- App Download Section Start -->
+    <section class="app-download section-padding" data-scroll-index="3">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>Launch Your Branded IPTV Channel Selling Business Today</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="app-download-item">
+                        <i class="fas fa-rocket"></i> <!-- Icon representing launching or starting -->
+                        <h3>Get Started</h3>
+                        <p>Fill out the form below to get started with your branded IPTV channel selling business.</p>
+                        <a href="https://api.whatsapp.com/message/LZXDJ6XAUNDGE1?autoload=1&app_absent=0" class="btn btn-2">Get Started Now!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- App Download Section End -->
+
+    <!-- how it works section start -->
+
+    
+    <!-- how it works section End -->
+
+
+
+
+
+    <!-- Faq section Start -->
+    <section class="faq section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>Frequently <span>Asked</span> Queries</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div id="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header" data-toggle="collapse" data-target="#collapse-01">
+                                <h3>What are the advantages of the UM3U IPTV Channel Selling App compared to other similar applications?</h3>
+                            </div>
+                            <div class="collapse show" id="collapse-01" data-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>The UM3U IPTV Channel Selling App stands out for its flexibility and customization options. With our white-label solution, you can customize the app with your logo, brand colors, and name, establishing a strong presence in the market. Additionally, our app provides a user-friendly dashboard for managing subscriptions and user accounts effectively, ensuring excellent customer service. It is also compatible with multiple platforms, including Android, iOS, and TV devices, giving your customers the flexibility to enjoy IPTV channels on their preferred devices.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="accordion-item">
+                        <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">
+                            <h3>Can I customize the app with my own logo and branding?</h3>
+                        </div>
+                        <div class="collapse" id="collapse-02" data-parent="#accordion">
+                            <div class="accordion-body">
+                                <p>Absolutely! Our UM3U IPTV Channel Selling App offers a white-label solution, allowing you to customize the app with your logo, brand colors, and name. This way, you can establish a strong and professional presence in the market and build recognition for your brand.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="accordion-item">
+                        <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
+                            <h3>How can I manage subscriptions and user accounts effectively?</h3>
+                        </div>
+                        <div class="collapse" id="collapse-03" data-parent="#accordion">
+                            <div class="accordion-body">
+                                <p>Managing subscriptions and user accounts is made easy with our app. You'll have access to a user-friendly dashboard where you can effortlessly manage subscriptions, track user activity, and handle billing. Our app provides a seamless experience, ensuring that you have complete control and can provide excellent customer service.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
+                            <h3>Is the app compatible with multiple platforms?</h3>
+                        </div>
+                        <div class="collapse" id="collapse-04" data-parent="#accordion">
+                            <div class="accordion-body">
+                                <p>Yes, our UM3U IPTV Channel Selling App is designed to be compatible with multiple platforms, including Android, iOS, and TV devices. This means your customers can access IPTV channels on their preferred devices, giving them the flexibility to enjoy their favorite content anytime, anywhere.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Faq section End -->
+
+    <!-- QR Code Section Start -->
+    <style>
+        .rotate {
+            animation: rotate 1s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="qr-code-section section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title">
+                        <h2>Scan and Connect with Us</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="qr-code-item">
+                    <a href="https://api.whatsapp.com/message/LZXDJ6XAUNDGE1?autoload=1&app_absent=0">
+                        <img src="img/QR.png" alt="QR Code" class="animated-qr">
+                    </a>
+                </div>                
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.animated-qr').hover(function() {
+                $(this).addClass('rotate');
+            }, function() {
+                $(this).removeClass('rotate');
+            });
+        });
+    </script>
+</body>
+</html>
+
+    <!-- QR Code Section End -->
+
+<!-- Contact section start -->
+<section class="contact section-padding" data-scroll-index="5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="section-title">
+                    <h2>Get in <span>Touch</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-5">
+                <div class="contact-info">
+                    <h3>For Any Queries an d Support</h3>
+                    <div class="contact-info-item">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Write to us at </h4>
+                        <p>Moad.devloper@gmail.com</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call us on</h4>
+                        <p>+212 681-482440</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <div class="contact-form">
+                    <form action="mailto:Moad.devloper@gmail.com" method="post" enctype="text/plain">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="name"></label>
+                                    <input type="text" name="name" id="name" class="form-control" required placeholder="Your Name">
+                                </div>
+                                
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="email" ></label>
+                                    <input type="email" name="Email" id="Email" class="form-control" required placeholder="Your Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="Phone"></label>
+                                    <input type="text" name="Phone" id="Phone" class="form-control" required placeholder="Your Phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form-group">
+                                    <label for="message"></label>
+                                    <input type="text" name="message" id="message" class="form-control" required placeholder="Your Message">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <button type="submit" class="btn btn-2">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact section End -->
+
+
+
+
+    <!-- Footer section start -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>About Us</h3>
+                        <p>UM3U IPTV is a TV content streaming application that gives you instant access to a huge selection of TV channels and movies.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>Company</h3>
+                        <ul>
+                            <li>
+                                <a href="#">UM3U</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>Quik LInks</h3>
+                        <ul>
+                            <li>
+                                <a href="#" data-scroll-nav="0">Home</a>
+                            </li>
+                            <li>
+                                <a href="#" data-scroll-nav="1">Fearutes</a>
+                            </li>
+                            <li>
+                                <a href="#" data-scroll-nav="2">Screenshots</a>
+                            </li>
+
+                            <li>
+                                <a href="#" data-scroll-nav="3">Testimonials</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-col">
+                        <h3>Social Pages</h3>
+                        <ul>
+                            <li>
+                                <a href="#">Facebook</a>
+                            </li>
+                            <li>
+                                <a href="#">Twitter</a>
+                            </li>
+                            <li>
+                                <a href="#">instagram</a>
+                            </li>
+                            <li>
+                                <a href="#">Linkedin</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright-text">&copy;2023 @UM3U IPTV</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer section End -->
+
+    <!-- Toggle Theme start ligt and dark mode  -->
+    <div class="toggle-theme">
+        <i class="fas">
+
+        </i>
+    </div>
+    <!-- Toggle Theme End ligt and dark mode-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
